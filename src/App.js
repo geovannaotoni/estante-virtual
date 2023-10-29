@@ -1,12 +1,16 @@
-import { GET_BOOKS_NAME } from './api/queries';
-import FavoriteBooks from './components/FavoriteBooks/FavoriteBooks';
+import { Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
 function App() {
     return (
     <>
       <Header />
-      <FavoriteBooks />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

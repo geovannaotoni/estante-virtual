@@ -1,0 +1,63 @@
+h2 {
+  color: #555;
+  font-family: Roboto;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 1.5rem 0;
+}
+
+.books-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 58.5rem;
+  overflow: hidden;
+}
+
+.book-cover {
+  width: 8.5rem;
+  height: 12.375rem;
+  border-radius: 0.5rem;
+}
+
+.book-name {
+  overflow: hidden;
+  color: #555;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125rem;
+  width: 8.5rem;
+  height: 2.25rem;
+}
+
+.book-author {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58.5rem;
+}
+
+h5 {
+  color: #A076F2;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

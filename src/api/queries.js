@@ -1,10 +1,26 @@
 import { gql } from '@apollo/client';
 
 
-const GET_BOOKS_NAME = gql`
-  query MinhaQuery {
+const GET_FAVORITE_BOOKS = gql`
+  {
     favoriteBooks {
       name
+      cover
+      author {
+        id
+        name
+      }
+    }
+  }
+`;
+
+const GET_FAVORITE_AUTHORS = gql`
+  {
+    favoriteAuthors {
+      name
+      id
+      picture
+      booksCount
     }
   }
 `;
@@ -24,4 +40,4 @@ const GET_ALL_BOOKS_DATA = gql`
   }
 `;
 
-export { GET_BOOKS_NAME, GET_ALL_BOOKS_DATA };
+export { GET_FAVORITE_BOOKS, GET_ALL_BOOKS_DATA, GET_FAVORITE_AUTHORS };

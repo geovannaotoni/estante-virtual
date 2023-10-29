@@ -1,0 +1,52 @@
+.library-container {
+  /* width: 71.25rem; */
+  height: 45rem;
+  border-radius: 2rem 0rem 0rem 0rem;
+  background: #FFF;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
+  padding-left: 1.5rem;
+  margin-left: 9.25rem;
+}
+
+.authors-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.author-photo {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 0.5rem;
+}
+
+.author-box {
+  display: flex;
+  width: 18.5rem;
+  padding: 0.0625rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #E0E0E0;
+}
+
+.author-name {
+  color: #555;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125rem; 
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.books-count {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
