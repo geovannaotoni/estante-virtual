@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
-import TabbedComponent from '../TabbedComponent/TabbedComponent';
-import Library from '../Library/Library';
+import TabbedComponent from '../../components/TabbedComponent/TabbedComponent';
+import Library from '../../components/Library/Library';
 
 function Home() {
   return (

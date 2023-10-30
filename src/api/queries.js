@@ -4,6 +4,7 @@ import { gql } from '@apollo/client';
 const GET_FAVORITE_BOOKS = gql`
   {
     favoriteBooks {
+      id
       name
       cover
       author {
@@ -25,6 +26,40 @@ const GET_FAVORITE_AUTHORS = gql`
   }
 `;
 
+const GET_BOOK_BY_ID = (id) => gql`
+  {
+    book(id: ${id}) {
+      name
+      description
+      author {
+        id
+        name
+      }
+      cover
+    }
+  }
+`;
+
+const GET_ALL_BOOKS = gql`
+  {
+    allBooks {
+      id
+      name
+      author {
+        id
+        name
+      }
+      cover
+    }
+  }
+`;
+
+const GET_USER_PICTURE = gql`
+  {
+    userPicture
+  }
+`;
+
 const GET_ALL_BOOKS_DATA = gql`
   {
     favoriteBooks {
@@ -40,4 +75,4 @@ const GET_ALL_BOOKS_DATA = gql`
   }
 `;
 
-export { GET_FAVORITE_BOOKS, GET_ALL_BOOKS_DATA, GET_FAVORITE_AUTHORS };
+export { GET_FAVORITE_BOOKS, GET_FAVORITE_AUTHORS, GET_BOOK_BY_ID, GET_ALL_BOOKS, GET_USER_PICTURE };

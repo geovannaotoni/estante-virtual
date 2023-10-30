@@ -75,6 +75,12 @@
   cursor: pointer;
 }
 
+.button-box img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
 .separador {
   border: 1px solid #E0E0E0;
   height: 3rem;

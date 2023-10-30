@@ -1,14 +1,20 @@
 import React from 'react';
 import './Header.css';
 import logo from '../../images/logo.png';
+import { useQuery } from '@apollo/client';
 import { Search, Heart, PlusCircle, UserCircle2 } from 'lucide-react';
-
+import { GET_USER_PICTURE } from '../../api/queries';
+import { Link } from 'react-router-dom';
 
 function Header() {
-  return (
+  const { loading, error, data } = useQuery(GET_USER_PICTURE);
+
+    return (
     <header className='header'>
       <div className="box">
-        <img className="logo" alt="Logo" src={logo} />
+        <Link to='/'>
+          <img className="logo" alt="Logo" src={logo} />
+        </Link>
         <div className='input-container'>
           <input
             type="text"
@@ -28,7 +34,7 @@ function Header() {
           </div>
           <div className='separador'/>
           <div className='button-box profile'>
-            <UserCircle2 size={24} color="#555555"/>
+            {loading || error ? <UserCircle2 /> : <img src={data.userPicture} alt="user" />}
             <button className='button'>Jucicreide</button>
           </div>
         </div>
