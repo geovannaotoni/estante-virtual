@@ -1,4 +1,4 @@
-h2 {
+.h2-title {
   color: #555;
   font-family: Roboto;
   font-size: 1.25rem;
@@ -78,7 +78,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  h2 {
+  .h2-title {
     font-size: 1.75rem;
     padding: 1.5rem 0;
   }

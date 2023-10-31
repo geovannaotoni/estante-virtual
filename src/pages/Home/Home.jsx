@@ -2,14 +2,14 @@ import React from 'react';
 import './Home.css';
 import TabbedComponent from '../../components/TabbedComponent/TabbedComponent';
 import Library from '../../components/Library/Library';
-import MobileMenu from '../../components/MobileMenu/MobileMenu';
+import BottomMenu from '../../components/Mobile/BottomMenu/BottomMenu';
 
 function Home() {
   return (
     <section className='container-home'>
       <TabbedComponent />
       <Library />
-      <MobileMenu />
+      <BottomMenu />
     </section>
   )
 }

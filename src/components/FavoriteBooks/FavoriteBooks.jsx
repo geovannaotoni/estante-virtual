@@ -13,7 +13,7 @@ function FavoriteBooks() {
   return (
     <section>
       <div className='title-section'>
-        <h2>Livros favoritos</h2>
+        <h2 className='h2-title'>Livros favoritos</h2>
         <h5>ver todos</h5>
       </div>
       <div className='books-container'>

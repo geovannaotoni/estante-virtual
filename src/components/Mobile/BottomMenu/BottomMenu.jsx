@@ -1,10 +1,10 @@
 import React from 'react';
-import './MobileMenu.css';
+import './BottomMenu.css';
 import { Search, Heart, PlusCircle, Home } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 
-function MobileMenu() {
+function BottomMenu() {
   const navigate = useNavigate();
 
   return (
@@ -29,4 +29,4 @@ function MobileMenu() {
   )
 }
 
-export default MobileMenu;
+export default BottomMenu;

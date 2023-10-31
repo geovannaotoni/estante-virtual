@@ -20,7 +20,7 @@ function Library() {
   return (
     <section className='library-container'>
       <div className='title-section'>
-        <h2>Autores favoritos</h2>
+        <h2 className='h2-title'>Autores favoritos</h2>
         <h5>ver todos</h5>
       </div>
       <div className='authors-container'>

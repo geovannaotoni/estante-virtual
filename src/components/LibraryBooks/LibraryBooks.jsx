@@ -21,7 +21,7 @@ function LibraryBooks() {
 
   return (
     <>
-      <h2 className='library-title'>Biblioteca</h2>
+      <h2 className='library-title h2-title'>Biblioteca</h2>
       <div className='options-container'>
         {options.map((option, index) => (
           <button
