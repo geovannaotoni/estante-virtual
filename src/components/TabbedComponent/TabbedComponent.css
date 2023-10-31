@@ -3,6 +3,9 @@
   align-items: flex-start;
   gap: 1.25rem;
   list-style-type: none;
+  padding: 0 1.25rem;
+  width: 22.5rem;
+  background-color: #FFF;
 }
 
 .tabs-container li {
@@ -29,7 +32,27 @@
   border-bottom: 0.25rem solid #A076F2;
 }
 
-.favorite-container {
-  padding-bottom: 1.5rem;
-  padding-left: 10.75rem;
+@media (max-width: 767px) {
+  .tabs-container {
+    border-radius: 0rem 0rem 2rem 0rem;
+    background: #FFF;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  .hr {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .tabs-container {
+    background-color: #F7F7F7;
+    padding: 0;
+  }
+
+  .favorite-container {
+    padding-bottom: 1.5rem;
+    padding-left: 10.75rem;
+  }
 }

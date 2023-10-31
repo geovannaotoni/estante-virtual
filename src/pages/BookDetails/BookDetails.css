@@ -78,3 +78,7 @@
   line-height: 1.4375rem;
   padding-top: 1.5rem;
 }
+
+.book-info {
+  min-height: 10.5rem;
+}

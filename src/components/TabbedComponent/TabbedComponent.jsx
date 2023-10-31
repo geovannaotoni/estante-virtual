@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './TabbedComponent.css';
 import FavoriteBooks from '../FavoriteBooks/FavoriteBooks';
+import BorrowedBooks from '../BorrowedBooks/BorrowedBooks';
 
 const TabbedComponent = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -11,7 +12,7 @@ const TabbedComponent = () => {
     },
     {
       title: 'Emprestados',
-      content: 'Em Construção',
+      content: <BorrowedBooks />,
     },
   ];
   const handleTabClick = (tabIndex) => {
@@ -31,7 +32,7 @@ const TabbedComponent = () => {
           </li>
         ))}
       </ul>
-      <hr />
+      <hr className='hr' />
       <div>
         {tabs[activeTab].content}
       </div>

@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from '@apollo/client';
 import { GET_BOOK_BY_ID } from '../../api/queries';
 import { Download, Heart, Share2 } from 'lucide-react';
+import MobileMenu from '../../components/MobileMenu/MobileMenu';
 
 function BookDetails() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function BookDetails() {
 
   return (
     <section className='books-details'>
-      {loading ? 'Carregando...' : (
+      {loading ? <p className='loading'>Carregando...</p> : (
         <>
           <div className='box-cover'>
             <img className="cover" src={data.book.cover} alt={data.book.name} />
@@ -32,12 +33,15 @@ function BookDetails() {
             </button>
           </div>
           <div className='box-details'>
-            <h2 className='title'>{data.book.name}</h2>
-            <h3 className='author'>{data.book.author.name}</h3>
+            <div className='book-info'>
+              <h2 className='title'>{data.book.name}</h2>
+              <h3 className='author'>{data.book.author.name}</h3>
+            </div>
             <p>{data.book.description}</p>
           </div>
         </>
       )}
+      <MobileMenu />
     </section>
   )
 }

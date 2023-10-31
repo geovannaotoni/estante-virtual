@@ -24,19 +24,19 @@ function Header() {
           <Search color="#9E9E9E" size={24}/>
         </div>
         <div className='container-button'>
-          <div className='button-box'>
+          <button className='button-box btn-header'>
             <PlusCircle fill="#555555" size={24} color="#fff"/>
-            <button className='button'>Adicionar</button>
-          </div>
-          <div className='button-box'>
+            <span className='button'>Adicionar</span>
+          </button>
+          <button className='button-box btn-header'>
             <Heart fill="#555555" size={20} color="#555555"/>
-            <button className='button'>Favoritos</button>
-          </div>
+            <span className='button'>Favoritos</span>
+          </button>
           <div className='separador'/>
-          <div className='button-box profile'>
+          <button className='button-box profile'>
             {loading || error ? <UserCircle2 /> : <img src={data.userPicture} alt="user" />}
-            <button className='button'>Jucicreide</button>
-          </div>
+            <span className='button'>Jucicreide</span>
+          </button>
         </div>
       </div>
     </header>

@@ -10,17 +10,18 @@ function LibraryBooks() {
 
   const [selectedOption, setSelectedOption] = useState(0);
   const options = ['Todos', 'Romance', 'Aventura', 'Comédia'];
+  const englishOptions = ['ALL', 'ROMANCE', 'ADVENTURE', 'COMEDY'];
 
   const handleClick = (optionIndex) => {
     setSelectedOption(optionIndex);
   };
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className='loading'>Carregando...</p>;
   if (error) console.log(error.message);
 
   return (
     <>
-      <h2>Biblioteca</h2>
+      <h2 className='library-title'>Biblioteca</h2>
       <div className='options-container'>
         {options.map((option, index) => (
           <button
@@ -34,7 +35,9 @@ function LibraryBooks() {
       </div>
 
       <div className='books-lib-container'>
-        {data.allBooks.map((book, index) => (
+        {data.allBooks
+          .filter((book) => selectedOption === 0 || book.category === englishOptions[selectedOption])
+          .map((book, index) => (
           <Link
             to={`/book/${book.id}`}
             key={index}

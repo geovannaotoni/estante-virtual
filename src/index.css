@@ -13,14 +13,27 @@
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 22.5rem;
   margin: 0 auto;
 }
 
 main {
   background: #F7F7F7;
-  width: 80rem;
+  width: 22.5rem;
 }
+
+@media (min-width: 768px) {
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  main {
+    background: #F7F7F7;
+    width: 80rem;
+  }
+}
+
 
 body {
   margin: 0;

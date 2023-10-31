@@ -1,9 +1,11 @@
-.container-home {
-  width: 80rem;
-}
+@media (min-width: 768px) {
+  .container-home {
+    width: 80rem;
+  }
 
-hr {
-  width: 58.5rem;
-  height: 0.0625rem;
-  background: #E7E7E7;
+  hr {
+    width: 58.5rem;
+    height: 0.0625rem;
+    background: #E7E7E7;
+  }
 }

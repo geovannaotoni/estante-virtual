@@ -1,19 +1,32 @@
 h2 {
   color: #555;
   font-family: Roboto;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 1.5rem 0;
+  width: 15rem;
 }
 
-.books-container {
+.title-section {
   display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  width: 58.5rem;
-  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.25rem 1.25rem 1.25rem;
+}
+
+h5 {
+  color: #A076F2;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
 }
 
 .book-cover {
@@ -48,23 +61,39 @@ h2 {
   line-height: normal;
 }
 
-.title-section {
+.books-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 58.5rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  overflow: hidden;
 }
 
-h5 {
-  color: #A076F2;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+@media (max-width: 767px) {
+  .books-container {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #999 #eee;
+    padding: 0 1.25rem 0.5rem 1.25rem;
+  }
 }
 
-a {
-  text-decoration: none;
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.75rem;
+    padding: 1.5rem 0;
+  }
+
+  .books-container {
+    gap: 1.5rem;
+    width: 58.5rem;
+  }
+
+  .title-section {
+    width: 58.5rem;
+    padding: 0;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
 }
