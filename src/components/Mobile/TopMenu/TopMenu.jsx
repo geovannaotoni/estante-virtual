@@ -6,10 +6,10 @@ function TopMenu() {
   return (
     <div className='top-menu'>
       <button>
-        <ArrowLeft size={20} color="#fff"/>
+        <ArrowLeft size={20} color="#fff" strokeWidth={3}/>
       </button>
       <button>
-        <MoreVertical size={20} color="#fff"/>
+        <MoreVertical size={20} color="#fff" strokeWidth={3}/>
       </button>
     </div>
   )
