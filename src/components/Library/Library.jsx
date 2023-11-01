@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Library.css';
 import { useQuery } from '@apollo/client';
 import { GET_FAVORITE_AUTHORS } from '../../api/queries';
@@ -6,13 +6,6 @@ import LibraryBooks from '../LibraryBooks/LibraryBooks';
 
 function Library() {
   const { loading, error, data } = useQuery(GET_FAVORITE_AUTHORS);
-
-  const [selectedOption, setSelectedOption] = useState(0);
-  const options = ['Todos', 'Romance', 'Aventura', 'Comédia'];
-
-  const handleClick = (optionIndex) => {
-    setSelectedOption(optionIndex);
-  };
 
   if (loading) return <section className='library-container'>Loading...</section>;
   if (error) console.log(error.message);

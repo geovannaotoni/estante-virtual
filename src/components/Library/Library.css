@@ -1,6 +1,8 @@
 .author-photo {
-  width: 3.9375rem;
+  /* width: 3.9375rem; */
   height: 4.1875rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .authors-container {
@@ -8,12 +10,6 @@
   align-items: flex-start;
   gap: 1.5rem;
   align-self: stretch;
-}
-
-.author-photo {
-  width: 3.9375rem;
-  height: 4.1875rem;
-  border-radius: 0.5rem;
 }
 
 .author-name {
@@ -66,8 +62,6 @@
 
 @media (min-width: 768px) {
   .library-container {
-    /* width: 71.25rem; */
-    /* height: 45rem; */
     border-radius: 2rem 0rem 0rem 0rem;
     background: #FFF;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
@@ -87,6 +81,4 @@
     align-items: center;
     gap: 1rem;
   }
-
-
 }

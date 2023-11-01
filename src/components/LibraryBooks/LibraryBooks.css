@@ -57,10 +57,8 @@
   line-height: 1.125rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* white-space: nowrap; */
   align-self: stretch;
   flex-wrap: wrap;
-  /* height: 2.25rem; */
   width: 16.375rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -123,10 +121,8 @@
     font-style: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
     align-self: stretch;
     flex-wrap: wrap;
-    /* height: 2.25rem; */
     width: 13.25rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;

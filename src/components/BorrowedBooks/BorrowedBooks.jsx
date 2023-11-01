@@ -6,10 +6,9 @@ function BorrowedBooks() {
     <section>
       <div className='title-section'>
         <h2 className='h2-title'>Livros emprestados</h2>
-        {/* <h5>ver todos</h5> */}
       </div>
       <div className='books-container'>
-        Em Construção
+        <p className='p-borrowed'>Em Construção</p>
       </div>
     </section>
   )

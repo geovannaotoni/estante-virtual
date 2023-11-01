@@ -10,7 +10,6 @@ import TopMenu from '../../components/Mobile/TopMenu/TopMenu';
 function BookDetails() {
   const { id } = useParams();
   const { loading, error, data } = useQuery(GET_BOOK_BY_ID(id));
-  console.log(data)
   
   if (error) console.log(error.message);
 

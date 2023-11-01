@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './FavoriteBooks.css';
 import { useQuery } from '@apollo/client';
 import { GET_FAVORITE_BOOKS } from '../../api/queries';

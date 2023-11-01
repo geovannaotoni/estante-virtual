@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 function LibraryBooks() {
   const { loading, error, data } = useQuery(GET_ALL_BOOKS);
-  console.log(data);
 
   const [selectedOption, setSelectedOption] = useState(0);
   const options = ['Todos', 'Romance', 'Aventura', 'Comédia'];

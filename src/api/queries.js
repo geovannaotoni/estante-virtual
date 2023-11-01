@@ -1,6 +1,5 @@
 import { gql } from '@apollo/client';
 
-
 const GET_FAVORITE_BOOKS = gql`
   {
     favoriteBooks {
@@ -58,21 +57,6 @@ const GET_ALL_BOOKS = gql`
 const GET_USER_PICTURE = gql`
   {
     userPicture
-  }
-`;
-
-const GET_ALL_BOOKS_DATA = gql`
-  {
-    favoriteBooks {
-      name
-      description
-      author {
-        id
-        name
-      }
-      category
-      cover
-    }
   }
 `;
 

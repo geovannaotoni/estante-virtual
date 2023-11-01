@@ -3,7 +3,6 @@ import './BottomMenu.css';
 import { Search, Heart, PlusCircle, Home } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-
 function BottomMenu() {
   const navigate = useNavigate();
 
