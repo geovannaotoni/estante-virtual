@@ -17,9 +17,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/200.html",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compose:up": "docker-compose up -d --build",
+    "compose:down": "docker-compose down",
+    "dev": "docker exec -it ssbook sh -c \"npm start\""
   },
   "eslintConfig": {
     "extends": [
