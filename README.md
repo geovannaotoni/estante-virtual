@@ -23,6 +23,3 @@ A aplicação foi implantada usando o serviço Surge e está disponível em [htt
 
 # 💡 Habilidades:
 Feito a partir dos conhecimentos de CSS, HTML, JavaScript, JSX, React e React Router Dom, Componentes Funcionais, PropTypes, GraphQL, Requisições via API, Docker.
-
-# ℹ️ Observações
-Este é um projeto em desenvolvimento e pode haver algumas funcionalidades que ainda não foram implementadas. Sinta-se à vontade para contribuir com o projeto ou relatar problemas encontrados.
