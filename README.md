@@ -1,5 +1,5 @@
-# 📚 SSBook - Gerenciador de Livros
-Este projeto consiste em uma aplicação para gerenciar e exibir a biblioteca de livros do usuário, fornecendo informações sobre cada livro. A aplicação possui duas telas: uma tela inicial que lista todos os livros do usuário e uma tela interna do livro que pode ser acessada ao clicar em qualquer livro.
+# 📚 Gerenciador de Livros - [Etapa Técnica]
+Este projeto consiste em uma aplicação para gerenciar e exibir a biblioteca de livros do usuário, fornecendo informações sobre cada livro. A aplicação possui duas telas: uma tela inicial que lista todos os livros do usuário e uma tela interna do livro que pode ser acessada ao clicar em qualquer livro. 
 
 ## 🚀 Funcionamento
 A aplicação utiliza uma API GraphQL para obter os dados necessários para exibir as informações dos livros. As bibliotecas `@apollo/client` e `graphql` foram utilizadas para auxiliar nas requisições à API.
@@ -21,6 +21,9 @@ Isso iniciará um container Docker com a aplicação e já dará o start do proj
 ##	📷 Gif do Projeto:
 <img src="./src/images/ssbook-desktop.gif" />
 <img src="./src/images/ssbook-mobile.gif" />
+
+# :símbolo_informações: Observações
+Este é um projeto desenvolvido para uma etapa técnica de um processo seletivo para atuar como Desenvolvedor Front-End. Por isso, algumas funcionalidades que não foram implementadas. Sinta-se à vontade para contribuir com o projeto ou relatar problemas encontrados.
 
 ## 🔍 Visualize este projeto:
 A aplicação foi implantada usando o serviço Surge e está disponível em [https://geovannaotoni-ssbook.surge.sh/](https://geovannaotoni-ssbook.surge.sh/).
