@@ -23,7 +23,7 @@ Isso iniciará um container Docker com a aplicação e já dará o start do proj
 <img src="./src/images/ssbook-mobile.gif" />
 
 ## :information_source: Observações
-Este é um projeto desenvolvido para uma etapa técnica de um processo seletivo para atuar como Desenvolvedor Front-End. Por isso, algumas funcionalidades que não foram implementadas. Sinta-se à vontade para contribuir com o projeto ou relatar problemas encontrados.
+Este é um projeto desenvolvido para uma etapa técnica de um processo seletivo para atuar como Desenvolvedor Front-End. Por isso, existem algumas funcionalidades que ainda não foram implementadas. Sinta-se à vontade para contribuir com o projeto ou relatar problemas encontrados.
 
 ## 🔍 Visualize este projeto:
 A aplicação foi implantada usando o serviço Surge e está disponível em [https://geovannaotoni-ssbook.surge.sh/](https://geovannaotoni-ssbook.surge.sh/).
