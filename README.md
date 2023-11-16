@@ -22,7 +22,7 @@ Isso iniciará um container Docker com a aplicação e já dará o start do proj
 <img src="./src/images/ssbook-desktop.gif" />
 <img src="./src/images/ssbook-mobile.gif" />
 
-# :símbolo_informações: Observações
+# :information_source: Observações
 Este é um projeto desenvolvido para uma etapa técnica de um processo seletivo para atuar como Desenvolvedor Front-End. Por isso, algumas funcionalidades que não foram implementadas. Sinta-se à vontade para contribuir com o projeto ou relatar problemas encontrados.
 
 ## 🔍 Visualize este projeto:
