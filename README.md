@@ -1,4 +1,4 @@
-# 📚 Gerenciador de Livros - [Etapa Técnica]
+# 📚 Gerenciador de Livros - [Prova Prática]
 Este projeto consiste em uma aplicação para gerenciar e exibir a biblioteca de livros do usuário, fornecendo informações sobre cada livro. A aplicação possui duas telas: uma tela inicial que lista todos os livros do usuário e uma tela interna do livro que pode ser acessada ao clicar em qualquer livro. 
 
 ## 🚀 Funcionamento
